@@ -3,3 +3,7 @@ services:
     build: learn-artemis-backend
     ports:
       - "8080:8080"
+  learn-artemis-bff:
+    build: learn-artemis-bff
+    ports:
+      - "8081:8080"
