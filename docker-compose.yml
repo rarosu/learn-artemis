@@ -1,0 +1,5 @@
+services:
+  learn-artemis-backend:
+    build: learn-artemis-backend
+    ports:
+      - "8080:8080"
