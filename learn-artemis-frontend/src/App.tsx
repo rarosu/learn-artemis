@@ -76,13 +76,13 @@ const App = () => {
                     <h2>Failed to submit</h2>
                     <p>Something went wrong when trying to submit.</p>
                     {axiosError.code !== undefined && (
-                        <p><strong>Code: </strong> {axiosError.code}</p>
+                        <p><strong>Code:</strong> {axiosError.code}</p>
                     )}
                     {axiosError.response?.status !== 0 && (
-                        <p><strong>Status code: {axiosError.response?.status} {axiosError.response?.statusText}</strong></p>
+                        <p><strong>Status code:</strong> {axiosError.response?.status} {axiosError.response?.statusText}</p>
                     )}
                     {axiosError.response?.data !== undefined && (
-                        <p><strong>Response: </strong> {JSON.stringify(axiosError.response.data)}</p>
+                        <p><strong>Response:</strong> {JSON.stringify(axiosError.response.data)}</p>
                     )}
                 </div>
             )}

@@ -11,3 +11,16 @@ services:
     build: learn-artemis-frontend
     ports:
       - "3000:80"
+  artemis:
+    image: quay.io/artemiscloud/activemq-artemis-broker:latest
+    ports:
+      - "9404:9404"
+      - "9876:9876"
+      - "61616:61616"
+      - "5445:5445"
+      - "5672:5672"
+      - "1883:1883"
+      - "8161:8161"
+    environment:
+      AMQ_USER: admin
+      AMQ_PASSWORD: admin

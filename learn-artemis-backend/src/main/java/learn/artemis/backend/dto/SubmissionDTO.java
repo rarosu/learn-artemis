@@ -1,4 +1,4 @@
-package learn.artemis.bff.dto;
+package learn.artemis.backend.dto;
 
 import lombok.Getter;
 import lombok.Setter;
