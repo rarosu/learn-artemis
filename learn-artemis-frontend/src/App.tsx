@@ -21,7 +21,7 @@ const App = () => {
         try {
             setMessageId(undefined);
             setIsSubmitting(true);
-            const response = await axios.post<SubmissionResponse, AxiosResponse<SubmissionResponse>, Submission>("http://localhost:8081", {messageName, value});
+            const response = await axios.post<SubmissionResponse, AxiosResponse<SubmissionResponse>, Submission>("http://localhost:8080", {messageName, value});
             setMessageId(response.data.messageId);
         } catch (error: any) {
             console.error(error);
@@ -39,7 +39,7 @@ const App = () => {
     return (
         <div className="container">
             <h1>Learn Artemis</h1>
-            <p className="lead">This is an example form that will send a message to the backend-for-frontend (BFF) which will then use Artemis to communicate this message to the backend which will log it.</p>
+            <p className="lead">This is an example form that will send a message to the backend-for-frontend (BFF) which will then use Artemis to communicate this message to a listener in the BFF which will log it.</p>
             <p className="lead">Just enter some information below and press submit.</p>
             <form onSubmit={async (e) => await handleSubmit(e)}>
                 <div className="mb-3">

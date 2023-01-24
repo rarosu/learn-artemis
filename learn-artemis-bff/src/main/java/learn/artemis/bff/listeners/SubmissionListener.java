@@ -1,6 +1,6 @@
-package learn.artemis.backend.listeners;
+package learn.artemis.bff.listeners;
 
-import learn.artemis.backend.dto.SubmissionDTO;
+import learn.artemis.bff.dto.SubmissionDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jms.annotation.JmsListener;

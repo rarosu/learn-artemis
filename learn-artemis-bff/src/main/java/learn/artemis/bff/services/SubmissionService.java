@@ -1,9 +1,9 @@
 package learn.artemis.bff.services;
 
+import learn.artemis.bff.dto.SubmissionDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
-import learn.artemis.bff.dto.SubmissionDTO;
 import learn.artemis.bff.dto.SubmissionResponseDTO;
 
 import javax.jms.JMSException;

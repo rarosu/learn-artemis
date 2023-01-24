@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 FROM gradle:7-jdk17 AS build
 COPY --chown=gradle:gradle . /home/gradle/src
+RUN ls /home/gradle/src
 WORKDIR /home/gradle/src
 RUN gradle build --no-daemon
 
